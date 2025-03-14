@@ -24,21 +24,15 @@
     <h2 class="mb-4 fw-bolder">HEXABOT Ai</h1>
     <p class="lead">Your Futuristic,Favorit Ai</p>
     <hr class="my-4">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1"></div>
     </p>
   </div>
 
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1">
           
        
-    <div class="col" style = "display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      gap: 10px; /* Kurangi jarak antar lingkaran */
-      flex-wrap: wrap; /* Agar tetap responsif */
-      padding: 20px;">
-        <div class="circle" style = "width: 250px; height: 250px ; background-color: white; border-radius: 50%; display: flex;flex-direction: column; justify-content: center;align-items: center; text-align: center;
-        padding: 20px;">
+    <div class="col" style = "display: flex;justify-content: center;align-items: center; gap: 3px;flex-wrap: wrap ; padding: 5px;">
+        <div class="circle" style = "width: 250px; height: 250px ; background-color: white; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;">
         <i class="bi bi-shield-lock text-danger fs-1"></i>
           <h3>AI Chatbot</h3>
           <p>Super Charge AI Chatbot for Developers whatever you based on, just hover the chats while stuck, buddy...</p>
@@ -47,14 +41,8 @@
         
 
     
-      <div class="col" style = "display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      gap: 10px; /* Kurangi jarak antar lingkaran */
-      flex-wrap: wrap; /* Agar tetap responsif */
-      padding: 20px;">
-        <div class="circle" style = "width: 250px; height: 250px ; background-color: white; border-radius: 50%; display: flex;flex-direction: column; justify-content: center;align-items: center; text-align: center;
-        padding: 20px;">
+      <div class="col" style = "display: flex;justify-content: center; align-items: center;gap: 5px;flex-wrap: wrap;padding: 5px;">
+        <div class="circle" style = "width: 250px; height: 250px ; background-color: white; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;">
         <i class="bi bi-shield-lock text-danger fs-1"></i>
         <h5 class="mt-3"><b>Security</b></h5>
         <p>HEXABOT AI Secure features and anti fraud system will detect anomali access, what ever you are, where ever you are</p>
@@ -62,14 +50,8 @@
     </div>
 
    
-    <div class="col" style = "display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; /* Kurangi jarak antar lingkaran */
-    flex-wrap: wrap; /* Agar tetap responsif */
-    padding: 20px;">
-      <div class="circle" style = "width: 250px;height: 250px;background-color: white;border-radius: 50%;display: flex;flex-direction: column; justify-content: center;align-items: center; text-align: center;
-      padding: 20px;">
+    <div class="col" style = "display: flex; justify-content: center; align-items: center; gap: 5px; flex-wrap: wrap; padding: 5px;">
+      <div class="circle" style = "width: 250px;height: 250px;background-color: white;border-radius: 50%;display: flex;flex-direction: column; justify-content: center;align-items: center; text-align: center; padding: 20px;">
         <i class="bi bi-speedometer2 text-success fs-1"></i>
         <h5 class="mt-3"><b>Fastest Response</b></h5>
         <p>You will don't get stuck wile AI develoving your product code, just think 0,2 seconds you will be happy in short time</p>
@@ -77,9 +59,8 @@
     </div>
 
    
-    <div class="col" style = "display: flex;justify-content: center; align-items: center;">
-      <div class="circle" style = "width: 250px;height: 250px;background-color: white;border-radius: 50%;display: flex;flex-direction: column; justify-content: center;align-items: center; text-align: center;
-      padding: 20px;">
+    <div class="col" style = "display: flex; justify-content: center; align-items: center;">
+      <div class="circle" style = "width: 250px;height: 250px;background-color: white;border-radius: 50%;display: flex;flex-direction: column; justify-content: center;align-items: center; text-align: center; padding: 20px;">
         <i class="bi bi-cloud-arrow-down text-warning fs-1"></i>
         <h5 class="mt-3"><b>Cloud Options</b></h5>
         <p>Starvee engine offer Cloud Options to collect the dataset one you submit, and it will be resuable in every your projects</p>
