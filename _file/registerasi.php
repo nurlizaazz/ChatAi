@@ -37,7 +37,7 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100">REGISTER</button>
                             <p class="text-center mt-2">
-                                Have an account? <a href="">Login</a>
+                                Have an account? <a href="index.php?page=login">Login</a>
                             </p>
                         </form>
                     </div>

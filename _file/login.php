@@ -3,7 +3,7 @@
 <div class="container-fluid vh-100">
         <div class="row h-100">
     
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+            <div class="col-md-5 d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="title">HEXABOT</h1>
                 <p class="subtitle">YOUR FAVORITE CHATBOT</p>
             </div>
@@ -29,7 +29,7 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100">LOGIN</button>
                             <p class="text-center mt-2">
-                                Don't have an account? <a href="http://localhost:8888/HEXABOT/register.html">Register</a>
+                                Don't have an account? <a href="index.php?page=registerasi">Register</a>
                             </p>
                         </form>
                     </div>

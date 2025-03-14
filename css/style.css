@@ -1,0 +1,31 @@
+.title  {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: black;
+}
+
+.card login-form {
+    width: 450px; 
+    padding: 40px;
+    
+}
+
+.card-body {
+    font-size: 18px;
+    padding: 12px;
+}
+
+
+.login-form .btn {
+    font-size: 20px;
+    padding: 12px;
+}
+
+.login-form .card-title {
+    font-size: 30px;
+    font-weight: bold;
+}
