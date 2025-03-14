@@ -3,16 +3,17 @@
 <div class="container-fluid vh-100">
         <div class="row h-100">
     
-            <div class="col-md-5 d-flex flex-column justify-content-center align-items-center text-center">
-                <h1 class="title">HEXABOT</h1>
-                <p class="subtitle">YOUR FAVORITE CHATBOT</p>
+            <div class="col-md-5 d-flex flex-column justify-content-center align-items-center text-center mt-n5">
+
+                <h1 class="title"> HEXABOT </h1>
+                <p class="subtitle"> YOUR FAVORITE CHATBOT </p>
             </div>
 
 
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <div class="card login-form p-4 shadow-lg">
-                    <div class="card-body">
-                        <h1 class="card-title text-center">LOGIN</h1>
+                <div class="card login-form p-4 shadow-lg" style = " width: 460px; height: 500px; padding: 200px;border-radius: 12px;">
+                     <div class="card-body" style = " font-size: 18px ;padding: 20px;">
+                        <h1 class="card-title text-center" style = "font-size : 30px" > LOGIN </h1>
                         <form>
                             <div class="mb-3">
                                 <label class="form-label">Email address</label>

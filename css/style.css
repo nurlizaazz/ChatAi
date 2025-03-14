@@ -1,5 +1,5 @@
 .title  {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -8,15 +8,17 @@
     color: black;
 }
 
-.card login-form {
-    width: 450px; 
-    padding: 40px;
+.card-login-form {
+    width: 750px; 
+    padding: 2000px;
+    border-radius: 12px;
+    background-color: #ffffff;
     
 }
 
 .card-body {
     font-size: 18px;
-    padding: 12px;
+    padding: 20px;
 }
 
 
