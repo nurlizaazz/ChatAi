@@ -15,6 +15,6 @@ function loadPage($page){
     include '_file/404/not_found.php';
   }
 }
-
+include '_partials/_template/header.php';
 loadPage($page);
 ?>

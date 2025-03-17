@@ -1,4 +1,51 @@
-<?php include './_partials/_template/header.php';?>
+<?php 
+include "koneksi.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
+    $email = $_POST['email'];
+    $fullname = $_POST['fullname'];
+    $jenis_kelamin = isset($_POST['jenis_kelamin']) ? (int)$_POST['jenis_kelamin'] : null; // Ensure it's an integer
+    $no_telp = isset($_POST['no_telp']) ? $_POST['no_telp'] : ''; // Check if no_telp is set
+    $alamat = $_POST['alamat'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
+    $image = isset($_POST['image']) && !empty($_POST['image']) ? $_POST['image'] : '';
+    $role_id = 1; // Default role ID, adjust as necessary
+    $created_at = date('Y-m-d H:i:s');
+    $update_at =date('Y-m-d H:i:s') ; // Set to null initially
+    
+
+    // Check if email already exists
+    $query_check = "SELECT * FROM tb_users WHERE email = ?";
+    $stmt_check = $conn->prepare($query_check);
+    $stmt_check->bind_param("s", $email);
+    $stmt_check->execute();
+    $result_check = $stmt_check->get_result();
+
+    if ($result_check->num_rows > 0) {
+        echo "<script> alert ('Maaf email sudah terdaftar');</script>";
+        echo '<meta http-equiv="refresh" content="0.8; url=?page=register">';
+    } else {
+        // Insert data
+        $query_insert = "INSERT INTO tb_users (fullname, email, password, jenis_kelamin, no_telp, alamat, image, role_id, created_at, update_at) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $stmt_insert = $conn->prepare($query_insert);
+        $stmt_insert->bind_param("ssssssisss", $fullname, $email, $password, $jenis_kelamin, $no_telp, $alamat,$image, $role_id, $created_at, $update_at);
+
+                // Jalankan pernyataan insert
+                if ($stmt_insert->execute()) {
+                    echo "<script> alert ('Daftar Berhasil, Silahkan Login !!');</script>";
+                    echo '<meta http-equiv="refresh" content="0.8; url=?page=login">';
+                } else {
+                    echo "<script> alert ('Terjadi kesalahan saat mendaftar: " . $stmt_insert->error . "');</script>";
+                }
+            }
+        
+    
+
+    $stmt_check->close();
+    $conn->close();
+}
+?>
 
 <div class="container-fluid vh-100">
         <div class="row h-100">

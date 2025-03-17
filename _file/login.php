@@ -1,4 +1,52 @@
-<?php include './_partials/_template/header.php';?>
+<?php 
+include 'koneksi.php';
+
+// Proses login jika form disubmit
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+
+    // Query untuk mencari pengguna berdasarkan email
+    $stmt = $conn->prepare("SELECT id, fullname, email, password, role_id FROM tb_users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        $user = $result->fetch_assoc();
+        // Verifikasi password
+        if (password_verify($password, $user['password'])) {
+            // Simpan data pengguna ke session
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['fullname'] = $user['fullname'];
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['role_id'] = $user['role_id'];
+            
+            // Redirect berdasarkan role (opsional)
+            if ($user['role_id'] == 2) { // Admin
+                header("Location: index.php?page=admin_dashboard");
+            }else { // User biasa
+                header("Location: index.php?page=home");
+            }
+            exit();
+        } else {
+            $error = "Invalid password!";
+        }
+    } else {
+        $error = "Email not found!";
+    }
+    $stmt->close();
+}
+
+  
+
+?>
+<?php if (isset($error)): ?>
+    <div class="alert alert-danger" role="alert">
+      <?php echo $error; ?>
+    </div>
+  <?php endif; ?>
 
 <div class="container-fluid vh-100">
         <div class="row h-100">
