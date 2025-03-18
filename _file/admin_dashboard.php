@@ -1,17 +1,27 @@
-<!-- file_/admin_dashboard.php -->
-<head>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
 <?php
+include '_partials/_template/header.php';
+include "koneksi.php";
 
-include 'koneksi.php';
+// Cek apakah pengguna sudah login dan memiliki role admin (role_id = 2)
 if (!isset($_SESSION['user_id']) || $_SESSION['role_id'] != 2) {
+    // Jika belum login atau bukan admin, redirect ke halaman login
     header("Location: index.php?page=login");
     exit();
 }
 ?>
-<div class="container mt-5">
-    <h1>Welcome, Administrator <?php echo $_SESSION['fullname'];?>!</h1>
-    <p>This is the admin dashboard.</p>
-    <a href="index.php?page=logout" class="btn btn-danger">Logout</a>
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang, Admin! <?php echo $_SESSION['fullname']; ?> !</h1>
+        <p>Ini adalah halaman admin dashboard.</p>
+    </div>
+</body>
+</html>

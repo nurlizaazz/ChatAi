@@ -1,4 +1,5 @@
 <?php 
+include '_partials/_template/header.php';
 include "koneksi.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
@@ -26,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
         echo '<meta http-equiv="refresh" content="0.8; url=?page=register">';
     } else {
         // Insert data
-        $query_insert = "INSERT INTO tb_users (fullname, email, password, jenis_kelamin, no_telp, alamat, image, role_id, created_at, update_at) 
+        $query_insert = "INSERT INTO tb_users (fullname, email, password, jenis_kelamin, nomor_telepon, alamat, image, role_id, created_at, update_at) 
                         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt_insert = $conn->prepare($query_insert);
         $stmt_insert->bind_param("ssssssisss", $fullname, $email, $password, $jenis_kelamin, $no_telp, $alamat,$image, $role_id, $created_at, $update_at);
@@ -57,8 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
 
            
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <div class="card register-form p-4 shadow-lg">
-                    <div class="card-body">
+                <div class="card register-form p-4 shadow-lg" style = " width: 480px; height: 700px; padding: 200px;border-radius: 12px;">
+                    <div class="card-body" style = " font-size: 18px ;padding: 20px;">
                         <h1 class="card-title text-center">REGISTER</h1>
                         <form>
                             <div class="mb-3">
@@ -66,12 +67,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
                                 <input type="text" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Username</label>
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Jenis Kelamin</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Nomor Telepon</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Password</label>

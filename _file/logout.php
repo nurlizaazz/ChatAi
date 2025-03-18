@@ -2,6 +2,6 @@
 <?php
 session_start();
 session_destroy();
-header("Location: ?page=login");
+header("Location: index.php?page=login");
 exit();
 ?>
