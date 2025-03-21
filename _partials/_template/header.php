@@ -11,7 +11,7 @@
   <nav class="navbar navbar-expand-lg border-bottom border-5" style="background-color: #3674B5; border-color: #A1E3F9;">
         <div class="container-fluid">
         <a class="navbar-brand text-black fw-bold" href="#">
-        <h1 class="mb-0"><i class="bi bi-fingerprint text-warning"></i><b>HEXABOT</b></h1>
+        <h1 class="mb-0"><i class=" text-warning"></i><b>HEXABOT</b></h1>
       </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

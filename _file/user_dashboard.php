@@ -48,7 +48,7 @@
     <!-- Text Content -->
     <div class="text-center">
         <h5 style="font-size:60px;"><b>Welcome, <?php echo $_SESSION['fullname'];?>!</b></h5>
-        <p>This is the admin dashboard.</p>
+        <p>This is the  user.</p>
       </div>
     </div>
   </div>
