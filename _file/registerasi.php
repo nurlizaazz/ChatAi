@@ -55,55 +55,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['registerasi'])) {
 
 <div class="container register-container">
 
-<div class="regis-left">
+<div class="regis-text">
             <h1>HEXABOT</h1>
-            <p> Your Favorite AI</p>
+            <p> Your Favorite Ai</p>
         </div>
 
-    <div class="col-lg-4">
-        <main class="form-signin w-100">
-            <form method="POST">
-                <h1 class="h3 mb-3 fw-normal text-center">Register Now</h1>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <main class="form-signin w-100" >
+                     <form method="POST">
+                        <h1 class="h3 mb-3 fw-normal text-center">Register Now</h1>
 
-                <div class="form-floating">
-                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email</label>
-                </div>
+                        <div class="form-floating">
+                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="background-color: rgb(200, 220, 229)">
+                        <label for="floatingInput">Email</label>
+                        </div>
+                    <div class="form-floating mt-1">
+                        <input type="text" name="fullname" class="form-control" id="floatingInput" placeholder="name@example.com" style="background-color: rgb(200, 220, 229)">
+                        <label for="floatingInput">Username</label>
+                    </div>
+                    <div class="form-floating mt-1">
+                        <select name="jenis_kelamin" class="form-select" id="floatingGender" style="background-color: rgb(200, 220, 229)" required >
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Laki-laki</option>
+                            <option value="female">Perempuan</option>
+                        </select>
+                        <label for="floatingGender">Jenis Kelamin</label>
+                    </div>
+                    <div class="form-floating mt-1">
+                    <input type="tel" name="nomor_telepon" class="form-control" id="floatingPhone" placeholder="Nomor Telepon" style="background-color: rgb(200, 220, 229)" required>
+                        <label for="floatingPhone">No Telepon</label>
+                    </div>
+                    <div class="form-floating mt-1">
+                        <textarea name="alamat" class="form-control" id="floatingAddress" placeholder="Alamat" style="background-color: rgb(200, 220, 229)" required></textarea>
+                        <label for="floatingAddress">Alamat</label>
+                    </div>
+                    <div class="form-floating mt-1">
+                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" style="background-color: rgb(200, 220, 229)" required>
+                        <label for="floatingPassword">Password</label>
+                    </div>
 
-                <div class="form-floating mt-1">
-                    <input type="text" name="fullname" class="form-control" id="floatingUsername" placeholder="Username">
-                    <label for="floatingUsername">Username</label>
-                </div>
 
-                <div class="form-floating mt-1">
-                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
-                </div>
+                        <button class="btn btn-warning w-100 py-2 mt-3" type="submit" name="register">Register</button>
 
-                <div class="form-floating mt-1">
-                    <select name="jenis_kelamin" class="form-control" id="floatingGender" required>
-                        <option value="" disabled selected>Select Gender</option>
-                        <option value="male">Laki-laki</option>
-                        <option value="female">Perempuan</option>
-                    </select>
-                    <label for="floatingGender">Jenis Kelamin</label>
-                </div>
+                       
+                    </form>
+                </main>
 
-                <div class="form-floating mt-1">
-                    <input type="tel" name="nomor_telepon" class="form-control" id="floatingPhone" placeholder="Nomor Telepon" required>
-                    <label for="floatingPhone">No Telepon</label>
-                </div>
-
-                <div class="form-floating mt-1">
-                    <textarea name="alamat" class="form-control" id="floatingAddress" placeholder="Alamat" required></textarea>
-                    <label for="floatingAddress">Alamat</label>
-                </div>
-
-                <button class="btn btn-warning w-100 py-2 mt-3" type="submit" name="registerasi">Register</button>
-            </form>
-        </main>
+            </div>
+        </div>
     </div>
-</div>
 
 <!-- Panggil Footer -->
 <?php 

@@ -6,12 +6,13 @@
     <title>HEXABOT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   </head>
   <body style = "background : #578FCA">
   <nav class="navbar navbar-expand-lg border-bottom border-5" style="background-color: #3674B5; border-color: #A1E3F9;">
         <div class="container-fluid">
         <a class="navbar-brand text-black fw-bold" href="#">
-        <h1 class="mb-0"><i class="bi bi-fingerprint text-warning"></i><b>HEXABOT</b></h1>
+        <h1 class="mb-0"> <i class="bi bi-hexagon-half text-black fs-1"></i> <b>HEXABOT</b></h1>
       </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

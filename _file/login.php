@@ -51,43 +51,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <head>
   <link rel="stylesheet" href="./css/style.css?v=1:1">
  </head>
+
  <div class="container login-container">
+    
  
 
- <div class="login-left">
+ <div class="login-text">
             <h1>HEXABOT</h1>
-            <p> Your Favorite AI</p>
+            <p> Your Favorite Ai</p>
         </div>
 
-    <div class="col-lg-4">
-        <main class="form-signin">
-            <form action="" method="POST">
-                <h1 class="h3 mb-3 fw-normal text-center">Login Now</h1>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <main class="form-signin w-100" >
+                    <form action="" method="POST" >
+                        <h1 class="h3 mb-3 fw-normal text-center">Login Now</h1>
+    
+                        <div class="form-floating">
+                            <input type="email" name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="background-color: rgb(200, 220, 229)">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mt-2">
+                            <input type="password" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" style="background-color: rgb(200, 220, 229)">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 mb-4">
+                        <div class="form-check">
+                         <input class="form-check-input" type="checkbox" id="rememberMe">
+                          <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            </div>
 
-                <div class="form-floating">
-                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email</label>
-                </div>
-
-                <div class="form-floating mt-2">
-                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox" id="rememberMe">
-                    <label class="form-check-label" for="rememberMe">Remember me</label>
-                </div>
-
-                <button class="btn btn-warning w-100 py-2 mt-3" type="submit">Login</button>
-
-                <div class="text-center mt-3">
-                    Belum memiliki akun? <a href="?page=registerasi">Register</a>
-                </div>
-            </form>
-        </main>
+                        <button class="btn btn-warning w-100 py-2 mt-3" type="submit">Login</button>
+                        
+                        <div class="text-center mt-3">
+                            Belum memiliki akun? <a href="?page=registerasi">Register</a>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
     </div>
-</div>
 
 <!-- Panggil Footer -->
 <?php 

@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container ">
     <div class="row w-100">
       <div class="col-md-6 text-md-start text-center">
         <span>© 2025 HEXABOT, Inc</span>
