@@ -1,3 +1,3 @@
-![Landing Page 1](hex1.png)
-![Login Page 2](hex2.png)
-![Regis Page 3](hex3.png)
+![hex1.png](https://github.com/nurlizaazz/ChatAi/issues/1#issue-2946674154)
+![hex2.png](https://github.com/nurlizaazz/ChatAi/issues/1#issue-2946674154)
+![hex1.png](https://github.com/nurlizaazz/ChatAi/issues/1#issue-2946674154)
