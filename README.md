@@ -1,3 +1,3 @@
-![hex1](hex1.png)
-![hex2](hex2.png)
-![hex1](hex3.png)
+![hex1](images/hex1.png)
+![hex2](images/hex2.png)
+![hex1](images/hex3.png)
